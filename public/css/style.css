@@ -1,0 +1,117 @@
+:root {
+  --whiteColor: rgb(255, 255, 255);
+  --redColor: rgb(255, 0, 0);
+  --bgColor: #202023;
+  --mainColor: #658DFF;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+@font-face {
+  font-family: 'Gilroy Ultra Light';
+  src: url('../fonts/Gilroy-UltraLight.ttf');
+  src: url('../fonts/Gilroy-UltraLight.ttf') format('embedded-opentype'),
+  url('../fonts/Gilroy-UltraLight.ttf') format('woff'),
+  url('../fonts/Gilroy-UltraLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  font-family: 'Gilroy Ultra Light';
+  background-color: var(--bgColor);
+  scroll-behavior: smooth;
+  overflow-x: hidden; 
+  color: var(--whiteColor);
+  transition-duration: 500ms;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+}
+.promo {
+  position: relative;
+  width: calc(100vw - 64px);
+  left: 32px;
+  right: 32px;
+  top: 217px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+}
+.promo span {
+  color: #ecb674;
+}
+.promoUl {
+  position: relative;
+  width: calc(100vw - 64px);
+  left: 32px;
+  right: 32px;
+  top: 290px;
+  font-size: 14px;
+  font-weight: 400;
+  left: 48px;
+}
+.promoUl > ul > li {
+  margin-bottom: 8px;
+}
+.btn {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 10px auto;
+  padding: 10px 32px;
+  background: #005570;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  display: block;
+}
+.showM {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #005570;
+  top: 24px;
+  left: calc(100vw - 44px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+.showM span {
+  width: 30px;
+  height: 1px;
+  background-color: white;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.box {
+  background-color: #C4C4C4;
+  opacity: 0.1;
+  width: 182px;
+  height: 182px;
+  position: absolute;
+}
+.boxOne {
+  left: -123.51px;
+  top: -33px;
+  transform: rotate(32.02deg);
+}
+.boxTwo {
+  left: -65.95px;
+  top: -83px;
+  transform: rotate(18.27deg);
+}
+.boxThree {
+  left: 301.05px;
+  top: 88vh;
+  transform: rotate(18.27deg);
+}
+.boxFour {
+  left: 230.49px;
+  top: 90vh;
+  transform: rotate(32.02deg);
+}
