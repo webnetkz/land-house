@@ -25,10 +25,7 @@ html, body {
   overflow-x: hidden; 
   color: var(--whiteColor);
   transition-duration: 500ms;
-}
-section {
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 .promo {
   position: relative;
@@ -74,7 +71,7 @@ section {
   border-radius: 50px;
   background-color: #005570;
   top: 24px;
-  left: calc(100vw - 44px);
+  left: calc(100vw - 24px - 25px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,4 +111,7 @@ section {
   left: 230.49px;
   top: 90vh;
   transform: rotate(32.02deg);
+}
+.social {
+  position: relative;
 }
