@@ -6,12 +6,12 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 @font-face {
-  font-family: 'Gilroy Ultra Light';
-  src: url('../fonts/Gilroy-UltraLight.ttf');
-  src: url('../fonts/Gilroy-UltraLight.ttf') format('embedded-opentype'),
-  url('../fonts/Gilroy-UltraLight.ttf') format('woff'),
-  url('../fonts/Gilroy-UltraLight.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'Gilroy';
+  src: local('Gilroy Ultra Light'), local('Gilroy-Ultra-Light'),
+      url('Gilroy-UltraLight.woff2') format('woff2'),
+      url('Gilroy-UltraLight.woff') format('woff'),
+      url('Gilroy-UltraLight.ttf') format('truetype');
+  font-weight: 200;
   font-style: normal;
 }
 * {
