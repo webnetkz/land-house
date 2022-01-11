@@ -25,28 +25,30 @@
 
     <body>
       <menu>
-        <span class="closeMenu">+</span>
+        <img src="./public/img/icons/close.png" class="closeMenu" onclick="showMenu();">
         <img src="./public/img/logo_3.png" alt="logo «LandHouse»" class="logo_3">
         <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>6</li>
+          <li>Чем мы занимаемся</li>
+          <li>О нас</li>
+          <li>Наши проекты </li>
+          <li>Отзывы</li>
+          <li>Партнеры</li>
+          <li>Контакты</li>
         </ul>
       </menu>
-      <span class="showM">
+      <span class="showM" onclick="showMenu();">
         <span></span><span></span><span></span>
       </span>
 
-      <span class="box boxOne"></span>
-      <span class="box boxTwo"></span>
-      <span class="box boxThree"></span>
-      <span class="box boxFour"></span>
-
       <section class="s_1">
-        <div class="bg_s_1"></div>
+        <span style="position: absolute; z-index: 3; top: 0; left: 0;">
+          <span class="box boxOne"></span>
+          <span class="box boxTwo"></span>
+          <span class="box boxThree"></span>
+          <span class="box boxFour"></span>
+        </span>
+        <div class="bg_s_1">
+        </div>
         <div class="promo">
           <p>Строительство и ремонт жилых помещений<br> 
           <span>“ПОД КЛЮЧ”</span><br>
@@ -78,6 +80,38 @@
         <p>Сегодня ТОО «LandHouse» — это команда профессионалов, несущих персональную ответственность за свой участок работ и нацеленных на общий результат. </p>
       
         <img src="./public/img/logo_2.png" class="logo" alt="logo «LandHouse»">
+      </section>
+
+      <section class="s_3">
+        <h2 style="color: rgba(0, 90, 118, 1); font-weight: 900; margin-top: 71px; margin-bottom: 35px;">Чем мы занимаемся</h2>
+      
+        <div class="clickme" style="background: url('./public/img/clickme/clickme_1.png');">
+          <div>
+            <p>Строительство домов из дерева</p>
+            <button class="btnClear">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="clickme" style="background: url('./public/img/clickme/clickme_1.png');">
+          <div>
+            <p>Строительство домов из дерева</p>
+            <button class="btnClear">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="clickme" style="background: url('./public/img/clickme/clickme_1.png');">
+          <div>
+            <p>Строительство домов из дерева</p>
+            <button class="btnClear">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="clickme" style="background: url('./public/img/clickme/clickme_1.png');">
+          <div>
+            <p>Строительство домов из дерева</p>
+            <button class="btnClear">Подробнее</button>
+          </div>
+        </div>
       </section>
 
       <script src="./public/js/main.js"></script>
