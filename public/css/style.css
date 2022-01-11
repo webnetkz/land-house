@@ -1,3 +1,8 @@
+/*
+  .box == 1
+  .s_2 == 1
+  .social == 3
+*/
 :root {
   --whiteColor: rgb(255, 255, 255);
   --redColor: rgb(255, 0, 0);
@@ -8,15 +13,17 @@
 @font-face {
   font-family: 'Gilroy';
   src: local('Gilroy Ultra Light'), local('Gilroy-Ultra-Light'),
-      url('Gilroy-UltraLight.woff2') format('woff2'),
-      url('Gilroy-UltraLight.woff') format('woff'),
-      url('Gilroy-UltraLight.ttf') format('truetype');
+      url('../fonts/Gilroy-UltraLight.woff2') format('woff2'),
+      url('../fonts/Gilroy-UltraLight.woff') format('woff'),
+      url('../fonts/Gilroy-UltraLight.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
 }
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Gilroy';
+  font-style: normal;
 }
 html, body {
   font-family: 'Gilroy Ultra Light';
@@ -27,15 +34,28 @@ html, body {
   transition-duration: 500ms;
   min-height: 100vh;
 }
+section {
+  height: 100vh;
+}
+.bg_s_1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/bg_1.png");
+  filter: blur(3px);
+}
 .promo {
   position: relative;
   width: calc(100vw - 64px);
   left: 32px;
   right: 32px;
-  top: 217px;
+  top: 200px;
   text-align: center;
   font-weight: 700;
   font-size: 24px;
+  line-height: 29.71px;
 }
 .promo span {
   color: #ecb674;
@@ -43,15 +63,17 @@ html, body {
 .promoUl {
   position: relative;
   width: calc(100vw - 64px);
-  left: 32px;
+  left: 48px!important;
   right: 32px;
-  top: 290px;
+  top: 260px;
   font-size: 14px;
   font-weight: 400;
   left: 48px;
 }
 .promoUl > ul > li {
-  margin-bottom: 8px;
+  font-size: 16px;
+  margin-bottom: 13px;
+  line-height: 19.2px;
 }
 .btn {
   font-weight: 400;
@@ -71,6 +93,7 @@ html, body {
   border-radius: 50px;
   background-color: #005570;
   top: 24px;
+  left: calc(100vw - 24px - 50px)!important;
   left: calc(100vw - 24px - 25px);
   display: flex;
   flex-direction: column;
@@ -79,39 +102,101 @@ html, body {
   z-index: 99;
 }
 .showM span {
-  width: 30px;
+  width: 25px;
   height: 1px;
   background-color: white;
   margin-top: 4px;
   margin-bottom: 4px;
 }
 .box {
+  position: absolute;
   background-color: #C4C4C4;
   opacity: 0.1;
   width: 182px;
   height: 182px;
-  position: absolute;
+  z-index: 1
 }
 .boxOne {
   left: -123.51px;
   top: -33px;
   transform: rotate(32.02deg);
+  animation: boxF 6s infinite;
 }
 .boxTwo {
   left: -65.95px;
   top: -83px;
   transform: rotate(18.27deg);
+  animation: boxF 6s 3s infinite;
 }
 .boxThree {
   left: 301.05px;
   top: 88vh;
   transform: rotate(18.27deg);
+  animation: boxF 8s 3.5s infinite;
 }
 .boxFour {
-  left: 230.49px;
+  left: 260.49px;
   top: 90vh;
   transform: rotate(32.02deg);
+  transition-duration: 400ms;
+  animation: boxF 6s infinite;
+}
+@keyframes boxF {
+  0% {
+    z-index: 1;
+  }
+  50% {
+    transform: rotateX(10deg);
+    z-index: 1;
+  }
+  100% {
+    z-index: 1;
+  }
 }
 .social {
-  position: relative;
+  position: absolute;
+  top: calc(100vh - 15px - 40px);
+  left: calc(50vw - 13px - 45px);
+  z-index: 3;
+}
+.social img {
+  margin-left: 13px;
+}
+.s_2 {
+  position: absolute;
+  top: 100vh;
+  z-index: 1;
+  background: linear-gradient(155.6deg, #005A76 -2.31%, #29A2C8 102.35%);
+  width: 100vw;
+  height: 880px;
+  padding-top: 72px;
+}
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  line-height: 29.71px;
+  font-weight: 700;
+  margin: 0px 49px;
+  margin-bottom: 34px;
+}
+p {
+  color: white;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+  margin: 0 24px;
+  margin-bottom: 24px;
+}
+.logo {
+  display: block;
+  width: 185px;
+  padding: 104px 0px;
+  margin-left: calc(50vw - 92.5px);
+  animation: jumpLogo 7s infinite;
+}
+@keyframes jumpLogo {
+    50% {
+      transform: scale(1.2);
+    }
 }
