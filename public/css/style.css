@@ -290,7 +290,7 @@ menu li {
   display: block;
   background: rgba(0, 0, 0, 0);
   position: absolute;
-  bottom: 10px;
+  bottom: 40px;
   width: 150px;
   left: calc(50vw - 75px - 24px);
 }
