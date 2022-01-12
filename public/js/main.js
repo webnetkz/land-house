@@ -8,7 +8,7 @@ function showMenu() {
         menu.classList.remove('tmpshka');
 
         for(let sect of document.querySelectorAll('section')) {
-            sect.style.filter = 'blur(0)';
+            sect.style.filter = 'none';
         }
         document.querySelector('.showM').style.visibility = 'visible';
     } else {
