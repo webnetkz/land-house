@@ -508,3 +508,12 @@ menu li {
   filter: blur(200px);
   opacity: 0.5;
 }
+.s_10 {
+  position: absolute;
+  left: 0px;
+  height: 336px;
+  top: calc(100vh + 900px + 2632px + 584px + 1200px + 704px + 680px + 552px + 687px);
+  z-index: 3;
+  width: 100vw;
+  background: white;
+}
