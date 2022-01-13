@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
 
-        <title>App name</title>
+        <title>Главная</title>
 
         <meta charset="UTF-8">
         <meta name="theme-color" content="#202023">
@@ -33,7 +33,7 @@
           <li>Наши проекты </li>
           <li>Отзывы</li>
           <li>Партнеры</li>
-          <li>Контакты</li>
+          <li onclick="location.href = '#contacts'; showMenu();" >Контакты</li>
         </ul>
       </menu>
       <span class="showM" onclick="showMenu();">
@@ -41,8 +41,8 @@
       </span>
 
       <section class="s_1">
-        <span class="box boxOne"></span>
-        <span class="box boxTwo"></span>
+        <span class="box box1"></span>
+        <span class="box box2"></span>
         <div class="bg_s_1">
         </div>
         <div class="promo">
@@ -63,6 +63,10 @@
           <a href="#"><img src="./public/img/icons/wp.png"></a>
           <a href="#"><img src="./public/img/icons/tel.png"></a>
           <a href="#"><img src="./public/img/icons/inst.png"></a>
+        </div>
+        <div style="position: relative; top: 100px; left: 100px; z-index: 99;">
+          <span class="box box3"></span>
+          <span class="box box4"></span>
         </div>
       </section>
       
@@ -208,7 +212,9 @@
             </div>
           </div>
         </div>
-        <div class="bg_statistics"></div>
+        <div class="bg_statistics">
+        </div>
+        
       </section>
 
       <section class="s_7">
@@ -216,6 +222,21 @@
 
         <div class="firstSlider">
           <div style="background: url('./public/img/firstSlider_1.png');">
+            <div>
+              <p>Проект квартиры в ЖК “Rams City”</p>
+            </div>
+          </div>
+          <div style="background: url('./public/img/firstSlider_2.jpg'); margin-right: 32px;">
+            <div>
+              <p>Проект квартиры в ЖК “Rams City”</p>
+            </div>
+          </div>
+          <div style="background: url('./public/img/firstSlider_2.jpg'); margin-right: 32px;">
+            <div>
+              <p>Проект квартиры в ЖК “Rams City”</p>
+            </div>
+          </div>
+          <div style="background: url('./public/img/firstSlider_2.jpg'); margin-right: 32px;">
             <div>
               <p>Проект квартиры в ЖК “Rams City”</p>
             </div>
@@ -234,7 +255,9 @@
           <div class="itemSlider">
             <p style="display: flex; flex-direction: row; align-items: center; margin-top: 21px;">
               <img src="./public/img/people.png" alt="" class="people" style="margin-right: 21px;">
-              <span>Сергей Соболевский 37 лет Город Алматы</span>
+              <span>Сергей Соболевский <br>
+                37 лет <br>
+                Город Алматы</span>
             </p>
             <p>Купил с семьей квартиру в новостройке. В интернете нашел компанию “LandHouse”. Сначала ребята убедили меня сделать дизайн проект и уже по проекту мне сделали ремонт. Результатом я доволен на 100%. Больше всего понравилось то, что мое участие в этом процессе было миннимальным. Ребята практически все сделали сами. При этом всегда были со мной на связи</p>
             <p>
@@ -248,10 +271,43 @@
           <div class="itemSlider">
             <p style="display: flex; flex-direction: row; align-items: center; margin-top: 21px;">
               <img src="./public/img/people.png" alt="" class="people" style="margin-right: 21px;">
-              <span>Сергей Соболевский 37 лет Город Алматы</span>
+              <span>Сергей Соболевский <br>
+                37 лет <br>
+                Город Алматы</span>
             </p>
-            <p>Ребята из ЛэндХаус быстро и четко сделали свою работу. К счастью обошлись без “переделок” и не пришлось платить сверх того, что мне насчитали в самом начале. Уже не раз успела порекомендовать своим друзьям эту компанию.
-              Спасибо Владиславу за то, что быстро разработали проект и также быстро его реализовали.</p>
+            <p>Купил с семьей квартиру в новостройке. В интернете нашел компанию “LandHouse”. Сначала ребята убедили меня сделать дизайн проект и уже по проекту мне сделали ремонт. Результатом я доволен на 100%. Больше всего понравилось то, что мое участие в этом процессе было миннимальным. Ребята практически все сделали сами. При этом всегда были со мной на связи</p>
+            <p>
+              <img src="./public/img/icons/star.png" alt="">
+              <img src="./public/img/icons/star.png" alt="">
+              <img src="./public/img/icons/star.png" alt="">
+              <img src="./public/img/icons/star.png" alt="">
+              <img src="./public/img/icons/star.png" alt="">
+            </p>
+          </div>
+          <div class="itemSlider">
+            <p style="display: flex; flex-direction: row; align-items: center; margin-top: 21px;">
+              <img src="./public/img/people.png" alt="" class="people" style="margin-right: 21px;">
+              <span>Сергей Соболевский <br>
+                37 лет <br>
+                Город Алматы</span>
+            </p>
+            <p>Купил с семьей квартиру в новостройке. В интернете нашел компанию “LandHouse”. Сначала ребята убедили меня сделать дизайн проект и уже по проекту мне сделали ремонт. Результатом я доволен на 100%. Больше всего понравилось то, что мое участие в этом процессе было миннимальным. Ребята практически все сделали сами. При этом всегда были со мной на связи</p>
+            <p>
+              <img src="./public/img/icons/star.png" alt="">
+              <img src="./public/img/icons/star.png" alt="">
+              <img src="./public/img/icons/star.png" alt="">
+              <img src="./public/img/icons/star.png" alt="">
+              <img src="./public/img/icons/star.png" alt="">
+            </p>
+          </div>
+          <div class="itemSlider">
+            <p style="display: flex; flex-direction: row; align-items: center; margin-top: 21px;">
+              <img src="./public/img/people.png" alt="" class="people" style="margin-right: 21px;">
+              <span>Сергей Соболевский <br>
+                37 лет <br>
+                Город Алматы</span>
+            </p>
+            <p>Купил с семьей квартиру в новостройке. В интернете нашел компанию “LandHouse”. Сначала ребята убедили меня сделать дизайн проект и уже по проекту мне сделали ремонт. Результатом я доволен на 100%. Больше всего понравилось то, что мое участие в этом процессе было миннимальным. Ребята практически все сделали сами. При этом всегда были со мной на связи</p>
             <p>
               <img src="./public/img/icons/star.png" alt="">
               <img src="./public/img/icons/star.png" alt="">
@@ -264,11 +320,128 @@
       </section>
 
       <section class="s_9">
-        1
+        <h2  style="color: rgba(0, 90, 118, 1); text-shadow: 0 0 1px rgb(0, 90, 118); font-weight: 900; margin-top: 71px; margin-bottom: 29px;">Следите за нами в <span style="color: #C9405F; text-shadow: 0 0 1px #C9405F;">Instagram</span></h2>
+        <div style="display: flex; width: calc(100vw - 104px); margin-left: 52px;">
+          <img src="./public/img/logo_el.png" alt="">
+          <div style="text-align: left; display: flex; align-items: center; flex-direction: column; justify-content: center; margin-left: 30px; margin-bottom: 30px;">
+            <h2 style="color: rgba(0, 90, 118, 1); margin: 0px; text-shadow: 0 0 1px rgb(0, 90, 118); font-weight: 900; border-bottom: 2px solid rgba(0, 90, 118, 1);">landhouse.kz</h2>
+            <p style="color: rgba(0, 90, 118, 1); margin: 0px;"><b>1037</b> подписчиков</p>
+          </div>
+        </div>
+
+        <div class="slider_3">
+          <div style="background: url('../public/img/slide_3_1.png');background-size: cover;
+          background-repeat: no-repeat;"></div>
+          <div style="background: url('../public/img/slide_3_1.png');background-size: cover;
+          background-repeat: no-repeat;"></div>
+          <div style="background: url('../public/img/slide_3_1.png');background-size: cover;
+          background-repeat: no-repeat;"></div>
+          <div style="background: url('../public/img/slide_3_1.png');background-size: cover;
+          background-repeat: no-repeat;"></div>
+        </div>
+
+        <button class="btn" style="margin-top: 40px;color: white;background: linear-gradient(92.19deg, #7324C2 1.78%, #C52F65 48.27%, #DE933F 95.16%);">Перейти в Instagram</button>
       </section>
       
       <section class="s_10">
+        <h2  style="color: rgba(0, 90, 118, 1); text-shadow: 0 0 1px rgb(0, 90, 118); font-weight: 900; margin-top: 71px; margin-bottom: 59px;">Партнеры нашей компании</span></h2>
+        <div class="slider_4">
+          <img src="./public/img/partners/g1.png" alt="">
+          <img src="./public/img/partners/g2.png" alt="">
+          <img src="./public/img/partners/g3.png" alt="">
+          <img src="./public/img/partners/g4.png" alt="">
+          <img src="./public/img/partners/g5.png" alt="">
+          <img src="./public/img/partners/g6.png" alt="">
+          <img src="./public/img/partners/g7.png" alt="">
+          <img src="./public/img/partners/g8.png" alt="">
+          <img src="./public/img/partners/g9.png" alt="">
+          <img src="./public/img/partners/g10.png" alt="">
+        </div>
+      </section>
 
+      <section class="s_11">
+        <div class="bg_callback" style="background: url('./public/img/callback_2.jpg');"></div>
+        <form action="#" class="callback" style="background-color: rgba(0, 0, 0, 0.6);">
+            <h2 style="padding-top: 96px; padding-bottom: 56px;">Остались вопросы? Введите свои данные, мы перезвоним вам</h2>
+            <input type="text" class="inp" placeholder="Ваше имя*">
+            <input type="text" class="inp" placeholder="Номер телефона*">
+            <input type="text" class="inp" placeholder="E-mail">
+            <button class="btn">Перезвоните мне</button>
+        </form>
+      </section>
+
+      <section class="s_12">
+        <h2 id="contacts" style="color: rgba(0, 90, 118, 1); text-shadow: 0 0 1px rgb(0, 90, 118); font-weight: 900; margin-top: 71px; margin-bottom: 59px;">Наши контакты</h2>
+        <div style="display: flex; justify-content: space-around;">
+          <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <b style="font-family: Gilroy;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px; text-align: center; display: inline-block;color: rgba(0, 90, 118, 1); margin-bottom: 15px;">г. Нур-Султан</b>
+            <span style="color: rgba(0, 90, 118, 1); margin-bottom: 15px;">+7 771 757 7775</span>
+            <span style="color: rgba(0, 90, 118, 1); margin-bottom: 15px;">ЖК Family Town Е 652 </span>
+          </div>
+          <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <b style="font-family: Gilroy;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px; text-align: center; display: inline-block;color: rgba(0, 90, 118, 1); margin-bottom: 15px;">г. Алматы</b>
+            <span style="color: rgba(0, 90, 118, 1); margin-bottom: 15px;">+7 701 106 12 60</span>
+            <span style="color: rgba(0, 90, 118, 1); margin-bottom: 15px;">БЦ “Каратал”</span>
+          </div>
+        </div>
+        <h2 id="contacts" style="color: rgba(0, 90, 118, 1); text-shadow: 0 0 1px rgb(0, 90, 118); font-weight: 900; font-size: 18px;">landhouse@gmail.com</h2>
+      </section>
+
+      <section class="s_13">
+        <div style="display: flex; justify-content: space-around;">
+          <div style="text-align: left; width: 100%">
+            <p style="font-weight: 900;">КАРТА САЙТА</p>
+            <p style="margin-bottom: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Главная</a></p>
+            <p style="margin-bottom: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">О нас</a></p>
+            <p style="margin-bottom: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Проекты</a></p>
+            <p style="margin-bottom: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Отзывы</a></p>
+            <p style="margin-bottom: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Партнеры</a></p>
+          
+            <p style="font-weight: 900; margin-top: 40px;">НАПРАВЛЕНИЯ</p>
+            <p style="margin-bottom: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Дома из дерева</a></p>
+            <p style="margin-bottom: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Бани из дерева</a></p>
+            <p style="margin-bottom: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Ремонт квартир</a></p>
+            <p style="margin-bottom: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Дизайн интерьера</a></p>
+            <p style="margin-bottom: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Металлоконструкции</a></p>
+            <p style="margin-bottom: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Зеркала</a></p>
+
+            <p style="font-weight: 900; margin-top: 40px;">ПОДПИСЫВАЙТЕСЬ НА НАС</p>
+            <div style="margin-left: 24px">
+              <a href="#"><img src="./public/img/icons/wp_2.png"></a>
+              <a href="#" style="margin-left: 13px;"><img src="./public/img/icons/tel_2.png"></a>
+              <a href="#" style="margin-left: 13px;"><img src="./public/img/icons/inst_2.png"></a>
+            </div>
+            <img src="./public/img/logo_3.png" alt="" class="logoF">
+          </div>
+
+          <div style="text-align: left; width: 100%">
+            <p style="font-weight: 900;">КОНТАКТЫ</p>
+            <p style="margin: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none; font-weight: 900;">г. Нур-Султан</a></p>
+            <p style="margin: 0;"><a href="index.html" style="border-bottom: 1px solid white;font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">+7 771 757 7775</a></p>
+            <p style="margin: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">ЖК Family Town Е 652 </a></p>
+            <br><br>
+
+            <p style="margin: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none; font-weight: 900;">г. Алматы</a></p>
+            <p style="margin: 0;"><a href="index.html" style="border-bottom: 1px solid white; font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">+7 701 106 1260</a></p>
+            <p style="margin: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">БЦ “Каратал”</a></p>
+            <p style="margin: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">landhouse@gmail.com</a></p>
+
+            
+
+
+           <span style="font-size: 9px; position: relative; top: 380px;">©2021 LandHouse. Все права защищены.</span>
+          
+
+          </div>
+        </div>
       </section>
 
       <script src="./public/js/main.js"></script>
