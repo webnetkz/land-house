@@ -24,18 +24,18 @@
       </head>
 
     <body>
-      <menu>
-        <img src="./public/img/icons/close.png" class="closeMenu" onclick="showMenu();">
-        <img src="./public/img/logo_3.png" alt="logo «LandHouse»" class="logo_3">
-        <ul>
-          <li>Чем мы занимаемся</li>
-          <li>О нас</li>
-          <li>Наши проекты </li>
-          <li>Отзывы</li>
-          <li>Партнеры</li>
-          <li onclick="location.href = '#contacts'; showMenu();" >Контакты</li>
-        </ul>
-      </menu>
+        <menu>
+            <img src="./public/img/icons/close.png" class="closeMenu" onclick="showMenu();">
+            <img src="./public/img/logo_3.png" alt="logo «LandHouse»" class="logo_3" onclick="location.href = 'index.html'; showMenu();">
+            <ul>
+              <li onclick="location.href = 'index.html#own'; showMenu();">Чем мы занимаемся</li>
+              <li>О нас</li>
+              <li>Наши проекты </li>
+              <li onclick="location.href = 'index.html#otzivi'; showMenu();">Отзывы</li>
+              <li onclick="location.href = 'index.html#partners'; showMenu();">Партнеры</li>
+              <li onclick="location.href = 'index.html#contacts'; showMenu();" >Контакты</li>
+            </ul>
+          </menu>
       <span class="showM" onclick="showMenu();">
         <span></span><span></span><span></span>
       </span>
@@ -83,7 +83,7 @@
 
 
       <section class="hh_3">
-        <h2 style="color: rgba(0, 90, 118, 1); text-shadow: 0 0 1px rgb(0, 90, 118); margin-top: 71px; margin-bottom: 35px;">Преимущества ремонта “под ключ”</h2>
+        <h2 style="color: rgba(0, 90, 118, 1); margin-bottom: 35px;">Преимущества ремонта “под ключ”</h2>
         <div class="forIcon">
           <img src="./public/img/icons/ic13.png" alt="">
           <p style="font-size: 18px; line-height: 21.6px;">Один раз и надолго</p>
@@ -180,7 +180,7 @@
       </section>
 
       <section class="hh_6">
-        <h2 style="color: rgba(0, 90, 118, 1); text-shadow: 0 0 1px rgb(0, 90, 118); font-weight: 900; margin-top: 71px; margin-bottom: 35px;">Чем мы занимаемся</h2>
+        <h2 style="color: rgba(0, 90, 118, 1);  font-weight: 900; margin-bottom: 35px;">Чем мы занимаемся</h2>
       
         <div class="clickme" style="background: url('./public/img/clickme/clickme_1.png');">
           <div>
@@ -239,7 +239,7 @@
       </section>
 
       <section class="hh_8">
-        <h2 id="contacts" style="color: rgba(0, 90, 118, 1); text-shadow: 0 0 1px rgb(0, 90, 118); font-weight: 900; margin-top: 71px; margin-bottom: 59px;">Наши контакты</h2>
+        <h2 id="contacts" style="color: rgba(0, 90, 118, 1);  font-weight: 900;  margin-bottom: 59px;">Наши контакты</h2>
         <div style="display: flex; justify-content: space-around;">
           <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
             <b style="font-family: Gilroy;
@@ -260,7 +260,7 @@
             <span style="color: rgba(0, 90, 118, 1); margin-bottom: 15px;">БЦ “Каратал”</span>
           </div>
         </div>
-        <h2 id="contacts" style="color: rgba(0, 90, 118, 1); text-shadow: 0 0 1px rgb(0, 90, 118); font-weight: 900; font-size: 18px;">landhouse@gmail.com</h2>
+        <h2 id="contacts" style="color: rgba(0, 90, 118, 1); font-weight: 900; font-size: 18px;">landhouse@gmail.com</h2>
       </section>
 
       <section class="hh_9">
