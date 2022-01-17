@@ -273,6 +273,17 @@ html, body {
   filter: blur(3px);
   transition-duration: 500ms;
 }
+.bg_h_2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/bg_hothome.png");
+  background-size: cover;
+  filter: blur(3px);
+  transition-duration: 500ms;
+}
 .h_1, .hh_1 {
   height: 100vh;
   overflow: hidden;
@@ -288,11 +299,20 @@ html, body {
   filter: blur(3px);
   transition-duration: 500ms;
 }
+.bg_hh_3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/design.png");
+  background-size: cover;
+  filter: blur(3px);
+  transition-duration: 500ms;
+}
 .promo {
   position: relative;
-  width: calc(100vw - 64px);
-  left: 32px;
-  right: 32px;
+  width: 100vw;
   top: 200px;
   text-align: center;
   font-weight: 700;
@@ -305,21 +325,22 @@ html, body {
 }
 .promo p {
   font-weight: 700;
+  font-size: 24px;
+  line-height: 29.71px;
 }
 .promoUl {
   position: relative;
-  width: calc(100vw - 64px);
-  left: 48px!important;
-  right: 2px;
+  width: 100vw;
   top: 260px;
   font-size: 8px;
   font-weight: 400;
-  left: 28px;
 }
 .promoUl > ul > li {
   font-size: 14px;
   margin-bottom: 13px;
   line-height: 19.2px;
+  text-align: left;
+  margin-left: 50px;
 }
 .btn {
   font-weight: 400;
@@ -537,6 +558,10 @@ menu li {
   margin-left: 24px;
   margin-bottom: 24px;
 }
+.clickme p {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 .clickme > div {
   position: relative;
   width: 100%;
@@ -559,6 +584,7 @@ menu li {
   text-align: center;
   border: 1px solid white;
   margin-top: 32px;
+  margin-bottom: 12px;
   padding: 10px 32px;
   border-radius: 40px;
   color: white;
@@ -746,7 +772,6 @@ menu li {
 }
 .newFlex p {
   width: calc(100vw - 48px);
-  height: 464px;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -770,7 +795,7 @@ menu li {
 }
 .li {
   text-align: start;
-  margin-left: 48px
+  margin-left: 12px
 }
 .li::before {
   content: "·";
@@ -793,10 +818,12 @@ menu li {
 .forIcon p {
   color: rgba(0, 90, 118, 1);
   margin-left: 70px;
+  padding-bottom: 0px;
+  margin-top: -10px;
 }
 .forIcon img {
   position: absolute;
-  top: 25%;
+  top: 11px;
 }
 section {
   position: relative;
@@ -808,6 +835,9 @@ section {
   overflow: hidden;
   height: 100vh;
   width: 100vw;
+}
+.s_6 h2 {
+  padding-top: 72px;
 }
 .s_6 > .bg {
   background: rgba(0, 0, 0, 0.4);
@@ -945,12 +975,11 @@ section {
   width: 100vw;
   background: white;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 52px;
 }
 .slider_3 {
   min-height: 319.91px;
   margin-left: 24px;
-  margin-right: 24px;
   display: flex;
   overflow-x: auto;
   overflow-y: hidden;

@@ -29,8 +29,8 @@
         <img src="./public/img/logo_3.png" alt="logo «LandHouse»" class="logo_3" onclick="location.href = 'index.html'; showMenu();">
         <ul>
           <li onclick="location.href = 'index.html#own'; showMenu();">Чем мы занимаемся</li>
-          <li>О нас</li>
-          <li>Наши проекты </li>
+          <li onclick="location.href = 'index.html#about'; showMenu();">О нас</li>
+          <li onclick="location.href = 'homes.html'; showMenu();">Наши проекты </li>
           <li onclick="location.href = 'index.html#otzivi'; showMenu();">Отзывы</li>
           <li onclick="location.href = 'index.html#partners'; showMenu();">Партнеры</li>
           <li onclick="location.href = 'index.html#contacts'; showMenu();" >Контакты</li>
@@ -74,7 +74,7 @@
         <span class="box boxThree"></span>
         <span class="box boxFour"></span>
       </span>
-      <section class="s_2">
+      <section class="s_2" id="about">
         <h2>Немного о нашей компании</h2>
         <p>Компания «LandHouse» начала свою деятельность в 2007 году как команда строителей, которые специализировались на ремонте и отделке жилых помещений. Сейчас, в 2022 году, наша компания готова предложить вам обширный спектр строительных услуг.
         </p>
@@ -89,35 +89,35 @@
       <section class="s_3" id="own">
         <h2 style="color: rgba(0, 90, 118, 1); font-weight: 900; margin-bottom: 35px;">Чем мы занимаемся</h2>
       
-        <div class="clickme" style="background: url('./public/img/clickme/clickme_1.png');">
+        <div class="clickme" style="background: url('./public/img/clickme/clickme_1.png'); background-size: cover;">
           <div>
             <p>Строительство домов из дерева</p>
             <button class="btnClear" onclick="location.href = 'homes.html'">Подробнее</button>
           </div>
         </div>
 
-        <div class="clickme" style="background: url('./public/img/clickme/clickme_2.png');">
+        <div class="clickme" style="background: url('./public/img/clickme/clickme_2.png'); background-size: cover;">
           <div>
             <p>Строительство банных комплексов из дерева</p>
-            <button class="btnClear"  onclick="location.href = 'bath.html'">Подробнее</button>
+            <button class="btnClear"  onclick="location.href = 'hothome.html'">Подробнее</button>
           </div>
         </div>
 
-        <div class="clickme" style="background: url('./public/img/clickme/clickme_3.png');">
+        <div class="clickme" style="background: url('./public/img/clickme/clickme_3.png'); background-size: cover;">
           <div>
             <p>Ремонт жилых помещений</p>
-            <button class="btnClear"  onclick="location.href = 'repair.html'">Подробнее</button>
+            <button class="btnClear"  onclick="location.href = 'help.html'">Подробнее</button>
           </div>
         </div>
 
-        <div class="clickme" style="background: url('./public/img/clickme/clickme_4.png');">
+        <div class="clickme" style="background: url('./public/img/clickme/clickme_4.png'); background-size: cover;">
           <div>
             <p>Ремонт коммерческих помещений</p>
             <button class="btnClear">Подробнее</button>
           </div>
         </div>
 
-        <div class="clickme" style="background: url('./public/img/clickme/clickme_5.png');">
+        <div class="clickme" style="background: url('./public/img/clickme/clickme_5.png'); background-size: cover;">
           <div>
             <p>Разработка дизайн-проекта</p>
             <button class="btnClear">Подробнее</button>
@@ -265,8 +265,8 @@
             <p style="display: flex; flex-direction: row; align-items: center; margin-top: 21px;">
               <img src="./public/img/people.png" alt="" class="people" style="margin-right: 21px;">
               <span>Сергей Соболевский <br>
-                37 лет <br>
-                Город Алматы</span>
+                <span style="font-weight: 300;"> 37 лет</span> <br>
+                <span style="font-weight: 300;">Город Алматы</span></span>
             </p>
             <p>Купил с семьей квартиру в новостройке. В интернете нашел компанию “LandHouse”. Сначала ребята убедили меня сделать дизайн проект и уже по проекту мне сделали ремонт. Результатом я доволен на 100%. Больше всего понравилось то, что мое участие в этом процессе было миннимальным. Ребята практически все сделали сами. При этом всегда были со мной на связи</p>
             <p>
@@ -282,8 +282,8 @@
             <p style="display: flex; flex-direction: row; align-items: center; margin-top: 21px;">
               <img src="./public/img/people.png" alt="" class="people" style="margin-right: 21px;">
               <span>Мария Банникова <br>
-                35 лет <br>
-                Город Нур-Султан</span>
+                <span style="font-weight: 300;">35 лет </span><br>
+                <span style="font-weight: 300;">Город Нур-Султан</span></span>
             </p>
             <p>Ребята из ЛэндХаус быстро и четко сделали свою работу. К счастью обошлись без “переделок” и не пришлось платить сверх того, что мне насчитали в самом начале. Уже не раз успела порекомендовать своим друзьям эту компанию.
               Спасибо Владиславу за то, что быстро разработали проект и также быстро его реализовали.</p>
@@ -353,26 +353,26 @@
       <section class="s_12">
         <h2 id="contacts" style="color: rgba(0, 90, 118, 1);  font-weight: 900; margin-bottom: 59px;">Наши контакты</h2>
         <div style="display: flex; justify-content: space-around;">
-          <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+          <div style="display: flex; align-items: flex-start; flex-direction: column;">
             <b style="font-family: Gilroy;
             font-style: normal;
             font-weight: bold;
             font-size: 16px;
-            line-height: 20px; text-align: center; display: inline-block;color: rgba(0, 90, 118, 1); margin-bottom: 15px;">г. Нур-Султан</b>
+            line-height: 20px; text-align: left; display: inline-block;color: rgba(0, 90, 118, 1); margin-bottom: 15px;">г. Нур-Султан</b>
             <span style="color: rgba(0, 90, 118, 1); margin-bottom: 15px;">+7 771 757 7775</span>
             <span style="color: rgba(0, 90, 118, 1); margin-bottom: 15px;">ЖК Family Town Е 652 </span>
           </div>
-          <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+          <div style="display: flex; align-items: flex-start; flex-direction: column;">
             <b style="font-family: Gilroy;
             font-style: normal;
             font-weight: bold;
             font-size: 16px;
-            line-height: 20px; text-align: center; display: inline-block;color: rgba(0, 90, 118, 1); margin-bottom: 15px;">г. Алматы</b>
+            line-height: 20px; text-align: left; display: inline-block;color: rgba(0, 90, 118, 1); margin-bottom: 15px;">г. Алматы</b>
             <span style="color: rgba(0, 90, 118, 1); margin-bottom: 15px;">+7 701 106 12 60</span>
             <span style="color: rgba(0, 90, 118, 1); margin-bottom: 15px;">БЦ “Каратал”</span>
           </div>
         </div>
-        <h2 id="contacts" style="color: rgba(0, 90, 118, 1); text-shadow: 0 0 1px rgb(0, 90, 118); font-weight: 900; font-size: 18px;">landhouse@gmail.com</h2>
+        <h2 id="contacts" style="color: rgba(0, 90, 118, 1); font-weight: 900; font-size: 18px;">landhouse@gmail.com</h2>
       </section>
 
       <section class="s_13">
