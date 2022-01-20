@@ -36,6 +36,15 @@
           <li onclick="location.href = 'index.html#contacts'; showMenu();" >Контакты</li>
         </ul>
       </menu>
+      <div class="call">
+        <form action="#">
+            <h2 style="padding-top: 96px; padding-bottom: 56px;">Введите свои данные, мы перезвоним вам</h2>
+            <input type="text" class="inp" placeholder="Ваше имя*">
+            <input type="text" class="inp" placeholder="Номер телефона*">
+            <input type="text" class="inp" placeholder="E-mail">
+            <button class="btn" onclick="showCall();">Отправить</button>
+        </form>
+      </div>
       <span class="showM" onclick="showMenu();">
         <span></span><span></span><span></span>
       </span>
@@ -57,7 +66,7 @@
             <li>Реализовали больше 300 проектов</li>
             <li>От проекта до заселения</li>
           </ul>
-          <button class="btn" style="margin-top: 50px;">Оставить заявку</button>
+          <button class="btn" style="margin-top: 50px;"  onclick="showCall();">Оставить заявку</button>
         </div>
         <div class="social">
           <a href="#"><img src="./public/img/icons/wp.png"></a>
@@ -113,14 +122,14 @@
         <div class="clickme" style="background: url('./public/img/clickme/clickme_4.png'); background-size: cover;">
           <div>
             <p>Ремонт коммерческих помещений</p>
-            <button class="btnClear">Подробнее</button>
+            <button class="btnClear"  onclick="location.href = 'help.html'">Подробнее</button>
           </div>
         </div>
 
         <div class="clickme" style="background: url('./public/img/clickme/clickme_5.png'); background-size: cover;">
           <div>
             <p>Разработка дизайн-проекта</p>
-            <button class="btnClear">Подробнее</button>
+            <button class="btnClear"  onclick="location.href = 'design.html'">Подробнее</button>
           </div>
         </div>
       </section>
@@ -376,20 +385,20 @@
       </section>
 
       <section class="s_13">
-        <div style="display: flex; justify-content: space-around;">
+        <div style="display: flex; justify-content: space-around;">          
           <div style="text-align: left; width: 100%">
             <p style="font-weight: 900;">КАРТА САЙТА</p>
             <p style="margin-bottom: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Главная</a></p>
-            <p style="margin-bottom: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">О нас</a></p>
-            <p style="margin-bottom: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Проекты</a></p>
-            <p style="margin-bottom: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Отзывы</a></p>
-            <p style="margin-bottom: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Партнеры</a></p>
+            <p style="margin-bottom: 0;"><a href="index.html#about" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">О нас</a></p>
+            <p style="margin-bottom: 0;"><a href="homes.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Проекты</a></p>
+            <p style="margin-bottom: 0;"><a href="index.html#otzivi" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Отзывы</a></p>
+            <p style="margin-bottom: 0;"><a href="index.html#partners" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Партнеры</a></p>
           
             <p style="font-weight: 900; margin-top: 40px;">НАПРАВЛЕНИЯ</p>
-            <p style="margin-bottom: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Дома из дерева</a></p>
-            <p style="margin-bottom: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Бани из дерева</a></p>
-            <p style="margin-bottom: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Ремонт квартир</a></p>
-            <p style="margin-bottom: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Дизайн интерьера</a></p>
+            <p style="margin-bottom: 0;"><a href="homes.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Дома из дерева</a></p>
+            <p style="margin-bottom: 0;"><a href="hothome.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Бани из дерева</a></p>
+            <p style="margin-bottom: 0;"><a href="help.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Ремонт квартир</a></p>
+            <p style="margin-bottom: 0;"><a href="design.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Дизайн интерьера</a></p>
             <p style="margin-bottom: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Металлоконструкции</a></p>
             <p style="margin-bottom: 0;"><a href="index.html" style="font-size: 14px; line-height: 16,8px; color: white; text-decoration: none;">Зеркала</a></p>
 
